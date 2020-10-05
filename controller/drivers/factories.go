@@ -10,6 +10,7 @@ import (
 	"github.com/reef-pi/drivers/file"
 	"github.com/reef-pi/drivers/pca9685"
 	"github.com/reef-pi/drivers/ph_board"
+	"github.com/caspar187/drivers/ph4502c"
 	"github.com/reef-pi/drivers/pico_board"
 	"github.com/reef-pi/drivers/shelly"
 	"github.com/reef-pi/drivers/sht3x"
@@ -27,6 +28,7 @@ var driversMap = map[string]hal.DriverFactory{
 	"hs300":        tplink.HS300Factory(),
 	"pca9685":      pca9685.Factory(),
 	"ph-board":     ph_board.Factory(),
+	"ph4502c":			ph4502c.Factory(),
 	"ph-ezo":       ezo.Factory(),
 	"pico-board":   pico_board.Factory(),
 	"rpi":          rpihal.RpiFactory(),
