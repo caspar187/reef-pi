@@ -14,6 +14,7 @@ class Driver {
 
     await this.addDriver('pca9685', 'pca9685', {'address': '64', 'frequency': '1100'})
     await this.addDriver('ph-board', 'ph', {'address': '69'})
+    await this.addDriver('ph4502c', 'ph4502c', {'address': '48'})
     await this.addDriver('hs103', 'hs103', {'address': '192.168.1.1:9999'})
   }
 
